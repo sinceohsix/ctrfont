@@ -32,24 +32,8 @@ jobs:
           msystem: MINGW64
           update: true
 
-      - name: Add devkitPro pacman repository
-        run: |
-          curl -LO https://downloads.devkitpro.org/devkitpro-keyring.pkg.tar.xz
-          pacman -U --noconfirm --nodeps --needed devkitpro-keyring.pkg.tar.xz || true
-          cat >> /etc/pacman.conf << 'EOF'
-
-          [dkp-libs]
-          SigLevel = Optional TrustAll
-          Server = https://downloads.devkitpro.org/packages
-
-          [dkp-windows]
-          SigLevel = Optional TrustAll
-          Server = https://downloads.devkitpro.org/packages/windows
-          EOF
-          pacman -Sy --noconfirm
-
-      - name: Install 3ds-dev and Python
-        run: pacman -S --noconfirm 3ds-dev python
+      - name: Install Python
+        run: pacman -S --noconfirm python
 
       - name: Download custom font
         run: curl -L "${{ github.event.inputs.font_url }}" -o mergefonts/custom_font.ttf
