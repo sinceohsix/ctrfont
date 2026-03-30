@@ -48,8 +48,8 @@ jobs:
           EOF
           pacman -Sy --noconfirm
 
-      - name: Install 3ds-dev
-        run: pacman -S --noconfirm 3ds-dev
+      - name: Install 3ds-dev and Python
+        run: pacman -S --noconfirm 3ds-dev python
 
       - name: Download custom font
         run: curl -L "${{ github.event.inputs.font_url }}" -o mergefonts/custom_font.ttf
