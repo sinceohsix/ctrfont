@@ -1,0 +1,37 @@
+name: ctrfont
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up MSYS2
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+
+      - name: Add devkitPro pacman repository
+        shell: msys2 {0}
+        run: |
+          curl -LO https://pkg.devkitpro.org/devkitpro-keyring.pkg.tar.xz
+          pacman -U --noconfirm devkitpro-keyring.pkg.tar.xz
+          echo "[dkp-libs]" >> /etc/pacman.conf
+          echo "Server = https://pkg.devkitpro.org/packages" >> /etc/pacman.conf
+          echo "[dkp-windows]" >> /etc/pacman.conf
+          echo "Server = https://pkg.devkitpro.org/packages/windows" >> /etc/pacman.conf
+          pacman -Sy
+
+      - name: Install 3ds-dev
+        shell: msys2 {0}
+        run: pacman -S --noconfirm 3ds-dev
+
+      - name: Verify mkbcfnt
+        shell: msys2 {0}
+        run: mkbcfnt --version || mkbcfnt --help
