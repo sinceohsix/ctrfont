@@ -69,6 +69,7 @@ jobs:
             mergefonts/merged_font.ttf
 
       - name: Run FontTool
+        shell: pwsh
         run: |
           cd fonttool
           python3 FontTool.py -font SystemFont.bcfnt
