@@ -79,4 +79,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ github.event.inputs.font_name }}Font
-          path: fonttool/SystemFont.cia
+          path: |
+            fonttool/SystemFont.cia
+            mergefonts/merged_font.ttf
