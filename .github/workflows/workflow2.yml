@@ -82,11 +82,11 @@ jobs:
         shell: pwsh
         run: |
           $D = "${{ github.workspace }}"
-          & "$D\ctr_FontConverterConsole.exe" -i win -in "${{ env.FONT_NAME }}" `
+          & "$D\ctrfontconverter\ctr_FontConverterConsole.exe" -i win -in "${{ env.FONT_NAME }}" `
             -is ${{ github.event.inputs.font_size }} `
             -ic A4 `
             -o bcfnt -of fonttool/SystemFont.bcfnt `
-            -f xllt/3ds_bitmap_font_std.xllt
+            -f "$D\ctrfontconverter\xllt\3ds_bitmap_font_std.xllt"
 
       - name: Run FontTool
         shell: pwsh
