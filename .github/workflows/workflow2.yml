@@ -65,7 +65,7 @@ jobs:
         shell: pwsh
         run: |
           pip install fonttools --quiet
-          $fontName = python3 -c "from fontTools.ttLib import TTFont; tt = TTFont('mergefonts/merged_font.ttf'); print(tt['name'].getDebugName(4))"
+          $fontName = python3 -c "from fontTools.ttLib import TTFont; tt = TTFont('mergefonts/merged_font.ttf'); print(tt['name'].getDebugName(1))"
           echo "FONT_NAME=$fontName" >> $env:GITHUB_ENV
           
       - name: Install merged font to Windows
