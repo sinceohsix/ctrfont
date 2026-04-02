@@ -7,11 +7,11 @@ on:
         description: 'URL to a TTF/OTF font file'
         required: true
       font_size:
-        description: 'Font size in points'
+        description: 'Font Size (px)'
         required: true
         default: '20'
       font_name:
-        description: 'Font name (e.g. PopHappiness)'
+        description: 'Font Display Name (e.g. Pop Happiness)'
         required: true
 
 defaults:
@@ -91,14 +91,16 @@ jobs:
 
           draw.text((x, y), 'Aa', font=font, fill='black')
           os.makedirs('fonts/previews', exist_ok=True)
-          img.save('fonts/previews/${{ env.FONT_NAME }}.png')
+          img.save('fonts/previews/${{ env.FONT_NAME_SLUG }}.png')
           "
 
       - name: Commit preview to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git status
           git add fonts/previews/
+          git status
           git diff --staged --quiet || git commit -m "Add preview for ${{ env.FONT_NAME }}"
           git push
 
@@ -106,6 +108,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.FONT_NAME_SLUG }}
-          name: ${{ env.FONT_NAME }}
+          name: ${{ github.event.inputs.font_name }}
+          body: |
+            ### Preview
+            ![Preview](https://github.com/sinceohsix/ctrfont/blob/main/fonts/previews/${{ env.FONT_NAME_SLUG }}.png?raw=true)
           files: fonttool/SystemFont.cia
 
