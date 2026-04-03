@@ -27,5 +27,6 @@ There are currently **3** fonts available.
 Here are some previews of how you can style your 3DS with custom fonts!
 
 ### Coverting Your Own Fonts
+By using GitHub Actions, you can convert any compatible font file to an installable `SystemFont.cia` in as little as ~50 seconds! The workflow is based on the guide written by AromaKitsune and uses the same tools and scripts. None of the tools used are made by me, you can find more info about them below.
 
 ### Tools Used
