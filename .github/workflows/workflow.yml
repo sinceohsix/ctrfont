@@ -111,6 +111,6 @@ jobs:
           name: ${{ github.event.inputs.font_name }}
           body: |
             ### Preview
-            ![Preview](https://github.com/sinceohsix/ctrfont/blob/main/fonts/previews/${{ env.FONT_NAME_SLUG }}.png?raw=true)
+            ![Preview](https://github.com/sinceohsix/ctrfonts/blob/main/fonts/previews/${{ env.FONT_NAME_SLUG }}.png?raw=true)
           files: fonttool/SystemFont.cia
 
