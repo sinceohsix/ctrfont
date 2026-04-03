@@ -15,8 +15,8 @@ There are currently **3** fonts available.
 
 | Preview | Font | Download |
 | :-----: | :--: | :------: |
-| <img src="/fonts/previews/MARIO-MAKER.png"> | MARIO MAKER | [Download](https://github.com/sinceohsix/ctrfont/releases/download/MARIO-MAKER/SystemFont.cia) |
-| <img src="/fonts/previews/Zelda-Glyphs-v2-Deco.png"> | Zelda Glyphs | [Download](https://github.com/sinceohsix/ctrfont/releases/download/Zelda-Glyphs-v2-Deco/SystemFont.cia) |
+| <img src="/fonts/previews/MARIO-MAKER.png"> | MARIO MAKER | [Download](https://github.com/sinceohsix/ctrfonts/releases/download/MARIO-MAKER/SystemFont.cia) |
+| <img src="/fonts/previews/Zelda-Glyphs-v2-Deco.png"> | Zelda Glyphs | [Download](https://github.com/sinceohsix/ctrfonts/releases/download/Zelda-Glyphs-v2-Deco/SystemFont.cia) |
 
 
 #### Installing Custom Fonts
