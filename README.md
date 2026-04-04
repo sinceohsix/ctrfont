@@ -1,5 +1,8 @@
-# ctrfonts
+<div align=center>
+  <img src="./titlebar.png">
+</div>
 
+---
 A repository with dozens of custom Nintendo 3DS system fonts to personalize your console! You can also convert your own fonts using GitHub Actions (based on the [guide by AromaKitsune](https://aromakitsune.github.io/3DS-System-Font-Customization)).
 
 Custom firmware (CFW) is required to install custom fonts. You can setup custom firmware with [this guide](https://3ds.hacks.guide).
