@@ -1,8 +1,10 @@
 ## Custom Font Compatibility
 Not all 3DS software handles custom fonts properly. This page documents any known compatibility issues and working titles.
 
+If a game or app isnt listed here, it *should* work. However, this list does not cover every piece of software made for the 3DS. If an app has any compatibility issues with custom system fonts, open an issue.
+
 >[!NOTE]
->If a game or app isnt listed here, it *should* work. However, this list does not cover every piece of software made for the 3DS. If an app has any compatibility issues with custom system fonts, open an issue.
+>Custom fonts with characters that are generally bigger than the ones in the default 3DS font may have some spacing issues depending on the game and font used.
 
 ### Categories
 
@@ -26,9 +28,16 @@ System titles that use the system font and custom fonts as expected
 ### Incompatible
 Titles that have graphical or technical issues related to installed custom fonts
 
-- 
+- None documented.
 
 ### Compatible
 Non-system titles that use the system font but have no issues with custom fonts
 
-- 
+- Chibi-Robo Photo Finder
+- Dillon's Dead-Heat Breakers
+- Kid Icarus Uprising
+- Miitopia
+- Pilot Wings
+- Super Mario Maker
+- Super Smash Bros. for Nintendo 3DS
+- Tomodachi Life
