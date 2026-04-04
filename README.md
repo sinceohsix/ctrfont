@@ -18,6 +18,7 @@ Custom firmware (CFW) is required to install custom fonts. You can setup custom 
 2. [Previews](#previews)
 3. [Converting Your Own Fonts](#converting-your-own-fonts)
 4. [Tools Used](#tools-used)
+5. [Special Thanks](#special-thanks)
 
 ## Fonts
 There are currently **4** fonts available.  
@@ -78,3 +79,8 @@ By using GitHub Actions, you can convert any compatible font file to an installa
 - [3dstool](https://github.com/dnasdw/3dstool) by dnasdw and contributors
 - [CTR_Toolkit](https://github.com/Tiger21820/ctr_toolkit) by Tiger21820 & 3DSGuy
 - [`merge_fonts.py`](https://github.com/dkosmari/System-Font-Replacer/blob/main/merge-fonts.py) by dkosmari
+
+### Special Thanks
+First and foremost, this repository would not exist without the hard work of [AromaKitsune](https://github.com/aromakitsune). Huge shoutout to them for making their original guide on how to make custom fonts (found [here](https://aromakitsune.github.io/3DS-System-Font-Customization)) which was used as the basis to make the workflow.
+
+I'd also like to give thanks to OctoRuler, a member of the [Custom 3DS Assets](https://discord.gg/0z7IGZ5Sv3D0mEN0) Discord server, for cheering me on and helping with the compatibility list.
