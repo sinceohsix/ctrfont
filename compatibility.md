@@ -50,6 +50,7 @@ Non-system titles that use the system font but have no issues with custom fonts
 - Chibi-Robo Photo Finder
 - Dillon’s Dead-Heat Breakers
 - Flipnote Studio 3D
+- Freakyforms Deluxe: Your Creations, Alive!
 - Kid Icarus Uprising
 - Mario and Donkey Kong: Minis on the Move
 - Mario VS. Donkey Kong: Tipping Stars
